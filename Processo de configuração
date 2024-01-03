@@ -1,0 +1,6 @@
+1 - Utilize o comando "set" para visualizar qual imagem está configurada como padrão.
+2 - Use o comando "dir flash:" para listar o conteúdo do armazenamento flash.
+3 - Se o comando "dir flash" não funcionar, execute o comando "flash init" para inicializar o flash.
+4 - Utilize o comando "set BOOT flash: "nome da imagem"" para configurar a imagem desejada como padrão.
+5 - Novamente, utilize o comando "set" para verificar se a imagem foi substituída pela selecionada.
+6 - Por fim, utilize o comando "boot flash:" seguido do "nome da imagem" para iniciar o Switch com a imagem desejada.
