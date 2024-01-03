@@ -1,0 +1,14 @@
+
+copy usbflash0: "c2960x-universalk9-mz.152-7.E8.bin" -> (Esse comando realizará a cópia da imagem do USB para o switch.)
+
+#troque o nome da imagem do comando a cima pela correspondente.
+Verifique qual "flash" esta seu USB e tambem faça a troca.
+
+#coloque o nome que a imagem deve ter dentro do flash.
+Source filename []? c2960x-universalk9-mz.152-7.E8.bin 
+Destination filename [c2960x-universalk9-mz.152-7.E8.bin]? flash:c2960x-universalk9-mz.152-7.E8.bin
+
+SWA-L2-BACKUP-06#conf t
+SWA-L2-BACKUP-06(config)#boot system flash:c2960x-universalk9-mz.152-7.E8.bin #fara com que a imagem seje botada.
+
+Após o processo, utilize o comando "show version" para verificar se a imagem correta está sendo utilizada.
