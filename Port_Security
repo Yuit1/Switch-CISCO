@@ -1,0 +1,11 @@
+Switch(config)# interface gig0/2
+
+Switch(config-if)# switchport port-security
+
+Switch(config-if)# switchport port-security maximum 1
+
+Switch(config-if)# switchport port-security mac-address 00-d0-ba-11-21-31
+
+Switch(config-if)# switchport port-security violation shutdown
+
+Switch(config-if)#end
