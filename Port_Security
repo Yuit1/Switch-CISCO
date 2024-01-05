@@ -1,3 +1,5 @@
+Switch# config t
+
 Switch(config)# interface gig0/2
 
 Switch(config-if)# switchport port-security maximum 1
